@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>minesweeper game</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+    <div class = "diff">
+        <span class = "level" onclick="choseDiff(this)">Biginner</span>
+        <span class = "level" onclick="choseDiff(this)">Medium</span>
+        <span class = "level" onclick="choseDiff(this)">Expert</span>
+    </div>
+    <div class = "smile" onclick="playAgain()"></div>
+    <div class = "live"></div>
+    <table class="center">
+        <tbody class="game-board"></tbody>
+    </table>
+    <div class= "time">
+        <span class = "icon-time"></span>
+        <span class = "timer"></span>
+    </div>
+    <div class = "hint" onclick="getHint()">Hint ? <span></span></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
